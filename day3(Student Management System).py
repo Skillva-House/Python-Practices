@@ -23,7 +23,7 @@ def add_student():
     }
 
     students.append(student)
-    print("Student added successfully ✅")
+    print("Student added successfully ")
 
 
 # Function to view students
@@ -45,13 +45,13 @@ def search_student():
     found = False
     for student in students:
         if student["name"].lower() == search_name.lower():
-            print("Student Found ✅")
+            print("Student Found ")
             print(student)
             found = True
             break
 
     if not found:
-        print("Student not found ❌")
+        print("Student not found ")
 
 
 # Function to delete student
@@ -62,10 +62,10 @@ def delete_student():
     for student in students:
         if student["name"].lower() == name.lower():
             students.remove(student)
-            print("Student deleted successfully ✅")
+            print("Student deleted successfully ")
             return
 
-    print("Student not found ❌")
+    print("Student not found ")
 
 
 # Main Menu Loop
@@ -88,7 +88,7 @@ while True:
     elif choice == "4":
         delete_student()
     elif choice == "5":
-        print("Exiting program... Goodbye 👋")
+        print("Exiting program... Goodbye ")
         break
     else:
         print("Invalid choice! Please select 1-5.")
@@ -109,4 +109,6 @@ while True:
 #     "year" : 1964,
 #     "color": ["red","white","blue"]             
 #               }
+
 # print(thiisdict)
+
